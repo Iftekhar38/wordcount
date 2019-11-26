@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+      body {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+      }
+    </style>
+<title>WordCount</title>
+</head>
+<body bgcolor="#98b8a1">
+<h1 style="color:green" font-family: 'Lobster', cursive;>Welcome to wordcount website</h1>
+<form action="{% url 'count' %}">
+  <textarea name="fulltextarea" cols="40" rows="10"></textarea>
+  <br/>
+  <input type="submit" style="color:blue" value="count!"/>
+</form>
+
+</body>
+</html>

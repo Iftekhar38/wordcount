@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Tangerine">
+      <style>
+        h1,h2 {
+          font-family: 'Tangerine', serif;
+          font-size: 48px;
+        }
+      </style>
+<title>WordCount</title>
+</head>
+<body bgcolor="#98b8a1">
+<a href="{% url 'home'%}">Back to homepage</a>
+<h1>Counted</h1>
+
+<h2>Your Texts</h2>
+{{ fulltext }}
+<br/>
+<h2>Words Count</h2>
+length of words: {{ words }}
+<br/>
+</br>
+{% for word, value in wordfreq %}
+{{word}} = {{value}}
+<br/>
+{% endfor %}
+
+</body>
+</html>
